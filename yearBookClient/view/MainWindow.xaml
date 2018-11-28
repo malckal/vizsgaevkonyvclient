@@ -1,0 +1,14 @@
+﻿<Window x:Class="yearBookClient.view.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:yearBookClient.view"
+        mc:Ignorable="d"
+        Title="ÈVKÖNYV" Height="350" Width="525"
+        DataContext="{StaticResource mainWindowVM}">
+    <Grid>
+        <Frame Name="mainFrame" NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}" RenderTransformOrigin="0.561,0.133" Background="#FF780101"/>
+
+    </Grid>
+</Window>
